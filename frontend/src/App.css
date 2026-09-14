@@ -169,30 +169,110 @@ body {
   font-weight: 500;
 }
 
-/* FOOTER */
+/* FOOTER & COUNTDOWN */
 .site-footer {
   margin-top: auto;
   border-top: 4px solid var(--text-color);
   padding-top: 24px;
   padding-bottom: 40px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  gap: 28px;
 }
 
-.qr-placeholder {
-  width: 64px;
-  height: 64px;
+@media (min-width: 480px) {
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.vote-action-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 220px;
+}
+
+.vote-btn {
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 14px 16px;
+  text-align: center;
+  border: 2px solid var(--text-color);
+  width: 100%;
+  transition: all 0.2s ease;
+  display: block;
+  text-decoration: none;
+}
+
+.vote-btn.disabled {
+  background-color: #111;
+  color: #666;
+  border-color: #444;
+  cursor: not-allowed;
+}
+
+.vote-btn.active {
+  background-color: var(--accent-color);
+  color: #000;
+  cursor: pointer;
+}
+
+.vote-btn.active:hover {
   background-color: var(--text-color);
-  color: var(--bg-color);
+}
+
+.timer-grid {
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  gap: 4px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.timer-cell {
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+}
+
+.timer-cell small {
+  font-size: 0.65rem;
+  color: #888;
+}
+
+.timer-sep {
+  color: #555;
+}
+
+.live-pill {
+  background: var(--accent-color);
+  color: #000;
   font-weight: 900;
-  font-size: 0.7rem;
-  border: 4px solid var(--bg-color);
-  outline: 2px solid var(--text-color);
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  letter-spacing: 0.05em;
+}
+
+/* CANDIDATE INFO */
+.candidate-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: 480px) {
+  .candidate-meta {
+    align-items: flex-end;
+  }
 }
 
 .candidate-name {
@@ -201,5 +281,14 @@ body {
   text-transform: uppercase;
   letter-spacing: -0.05em;
   line-height: 0.85;
-  text-align: right;
+}
+
+.student-id {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #888;
+  text-transform: uppercase;
 }

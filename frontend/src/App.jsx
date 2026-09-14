@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import TrackItem from './components/TrackItem';
 import heroImage from './assets/hero3.png'; 
+import CountdownButton from './components/CountdownButton';
 
 export default function App() {
   return (
@@ -18,7 +19,7 @@ export default function App() {
         <p>
           Hi, I'm Tshedza, casually known as <span className="frank-highlight">"Frank"</span>. 
           I don't usually spend all day lingering around campus, but if I look familiar, 
-          you've probably spotted me helping out at an OW Cares activation—or you just recognize 
+          you've probably spotted me helping out at an <span className="frank-highlight">OW Cares</span> activation—or you just recognize 
           me by my constantly changing hair color. It's green right now, in case the 
           nickname didn't give it away.
         </p>
@@ -58,12 +59,17 @@ export default function App() {
       </div>
 
       <footer className="site-footer">
-        <div className="qr-placeholder">
-          VOTE<br/>HERE
+        <CountdownButton 
+          targetDate="2026-09-21T00:00:00" 
+          voteUrl="https://your-voting-link.com" 
+        />
+
+        <div className="candidate-meta">
+          <h3 className="candidate-name">
+            Tshedza <span className="frank-highlight">"Frank"</span><br />Mosehane
+          </h3>
+          <span className="student-id">SN: 251056</span>
         </div>
-        <h3 className="candidate-name">
-          Tshedza<br />Mosehane
-        </h3>
       </footer>
       
     </div>
