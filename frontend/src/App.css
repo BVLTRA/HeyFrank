@@ -292,3 +292,77 @@ body {
   color: #888;
   text-transform: uppercase;
 }
+
+/* BVLTRA SUB-FOOTER */
+.bvltra-footer {
+  border-top: 1px solid #222;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 0.75rem;
+  color: #777;
+}
+
+@media (min-width: 600px) {
+  .bvltra-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.bvltra-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 360px;
+}
+
+.bvltra-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+.bvltra-desc {
+  line-height: 1.4;
+  font-weight: 500;
+  color: #888;
+}
+
+.bvltra-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+@media (min-width: 600px) {
+  .bvltra-links {
+    align-items: flex-end;
+  }
+}
+
+.portfolio-link {
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  transition: color 0.2s ease;
+  font-style: underline;
+}
+
+.portfolio-link:hover {
+  color: var(--accent-color);
+}
+
+.copyright {
+  font-family: monospace;
+  font-size: 0.65rem;
+  color: #555;
+  letter-spacing: 0.04em;
+}

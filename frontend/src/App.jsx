@@ -3,6 +3,7 @@ import './App.css';
 import TrackItem from './components/TrackItem';
 import heroImage from './assets/hero3.png'; 
 import CountdownButton from './components/CountdownButton';
+import bvltraLogo from './assets/bvltra-logo.svg';
 
 export default function App() {
   return (
@@ -61,7 +62,7 @@ export default function App() {
       <footer className="site-footer">
         <CountdownButton 
           targetDate="2026-09-21T00:00:00" 
-          voteUrl="https://your-voting-link.com" 
+          voteUrl="https://students.openwindow.co.za/open-window-student-sc/" 
         />
 
         <div className="candidate-meta">
@@ -71,6 +72,29 @@ export default function App() {
           <span className="student-id">SN: 251056</span>
         </div>
       </footer>
+      {/* BVLTRA SUB-FOOTER */}
+      <aside className="bvltra-footer">
+        <div className="bvltra-brand">
+          <img src={bvltraLogo} alt="BVLTRA Logo" className="bvltra-logo" />
+          <p className="bvltra-desc">
+            BVLTRA is an overarching ecosystem and digital studio by Tshedza Mosehane.
+          </p>
+        </div>
+
+        <div className="bvltra-links">
+          <a 
+            href="https://bvltra.com" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="portfolio-link"
+          >
+            Visit PORTFOLIO 
+          </a>
+          <span className="copyright">
+            © {new Date().getFullYear()} BVLTRA. ALL RIGHTS RESERVED.
+          </span>
+        </div>
+      </aside>
       
     </div>
   );
