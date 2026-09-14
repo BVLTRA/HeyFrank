@@ -1,13 +1,71 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import './App.css';
+import TrackItem from './components/TrackItem';
+import heroImage from './assets/hero3.png'; 
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-    </>
-  )
-}
+    <div className="campaign-container">
+      
+      <header className="site-header">
+        <h1>
+          CAMP-AIGN <br />
+          <span className="accent-text">2027</span>
+        </h1>
+      </header>
 
-export default App
+      <div className="intro-block">
+        <p>
+          Hi, I'm Tshedza, casually known as <span className="frank-highlight">"Frank"</span>. 
+          I don't usually spend all day lingering around campus, but if I look familiar, 
+          you've probably spotted me helping out at an OW Cares activation—or you just recognize 
+          me by my constantly changing hair color. It's green right now, in case the 
+          nickname didn't give it away.
+        </p>
+      </div>
+
+      <div className="hero-section">
+        <div className="hero-border"></div>
+        <img 
+          src={heroImage} 
+          alt="Tshedza Mosehane" 
+          className="hero-image"
+        />
+      </div>
+
+      <div className="tracklist">
+        <TrackItem 
+          trackNumber="01"
+          title="Outside Academia"
+          subtitle="(Events, Culture)"
+          details="Coursework covers the degree, but the hours between classes are what really make this place memorable. I want to help put on events, organize activations, and make everyday campus life worth sticking around for."
+        />
+        <TrackItem 
+          trackNumber="02"
+          title="Seen & Included"
+          details="We're a small campus, which means nobody should feel invisible. Making people feel welcomed, looking out for one another, and creating a sense of community."
+        />
+        <TrackItem 
+          trackNumber="03"
+          title="Protecting the Good"
+          details="We lowk don't need to rebuild everything. I'm focused on maintaining what’s already great about this campus, and hopefully adding to it."
+        />
+        <TrackItem 
+          trackNumber="04"
+          title="and Finally"
+          details="67... lolls, sorry, I swaer I'm actually funny... I couldn't resist 😭. But seriously, I'm all about bringing good things to the campus community."
+        />
+      </div>
+
+      <footer className="site-footer">
+        <div className="qr-placeholder">
+          VOTE<br/>HERE
+        </div>
+        <h3 className="candidate-name">
+          Tshedza<br />Mosehane
+        </h3>
+      </footer>
+      
+    </div>
+  );
+}
