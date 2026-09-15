@@ -45,7 +45,7 @@ export default function App() {
         <TrackItem 
           trackNumber="02"
           title="Seen & Included"
-          details="We're a small campus, which means nobody should feel invisible. Making people feel welcomed, looking out for one another, and creating a sense of community."
+          details="We're a small campus, which means nobody should feel invisible. I'm about making people feel welcomed, looking out for one another, and creating a sense of community."
         />
         <TrackItem 
           trackNumber="03"
@@ -55,7 +55,7 @@ export default function App() {
         <TrackItem 
           trackNumber="04"
           title="and Finally"
-          details="67... lolls, sorry, I swaer I'm actually funny... I couldn't resist 😭. But seriously, I'm all about bringing good things to the campus community."
+          details="67... lolls, sorry, I swear I'm actually funny... I couldn't resist 😭. But seriously, I'm all about bringing good things to the campus community."
         />
       </div>
 
