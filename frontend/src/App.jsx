@@ -3,11 +3,13 @@ import './App.css';
 import TrackItem from './components/TrackItem';
 import heroImage from './assets/hero3.png'; 
 import CountdownButton from './components/CountdownButton';
+import PivotModal from './components/PivotModal';
 import bvltraLogo from './assets/bvltra-logo.svg';
 
 export default function App() {
   return (
     <div className="campaign-container">
+      <PivotModal purpleUrl="https://purple.bvltra.com" />
       
       <header className="site-header">
         <h1>
