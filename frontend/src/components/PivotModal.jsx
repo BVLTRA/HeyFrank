@@ -43,8 +43,13 @@ export default function PivotModal({ purpleUrl }) {
           In the wake of what happened on September 14th, I've put my ideas hold to launch a platform addressing the crisis we are actually facing. I'd rather you look at that today.
         </p>
         
-        <a href={purpleUrl} className="modal-redirect-btn">
-          VISIT PURPLE AWARENESS ↗
+        <a 
+          href={purpleUrl} 
+          className="modal-redirect-btn"
+          target="_blank" 
+          rel="noreferrer"
+        >
+          VISIT PURPLE AWARENESS
         </a>
       </div>
     </div>
