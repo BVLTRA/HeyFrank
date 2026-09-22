@@ -9,7 +9,6 @@ import bvltraLogo from './assets/bvltra-logo.svg';
 export default function App() {
   return (
     <div className="campaign-container">
-      <PivotModal purpleUrl="https://purple.bvltra.com" />
       
       <header className="site-header">
         <h1>
@@ -27,6 +26,20 @@ export default function App() {
           nickname didn't give it away.
         </p>
       </div>
+
+      <footer className="site-footer">
+        <CountdownButton 
+          targetDate="2026-09-21T00:00:00" 
+          voteUrl="https://students.openwindow.co.za/open-window-student-sc/" 
+        />
+
+        <div className="candidate-meta">
+          <h3 className="candidate-name">
+            Tshedza <span className="frank-highlight">"Frank"</span><br />Mosehane
+          </h3>
+          <span className="student-id">SN: 251056</span>
+        </div>
+      </footer>
 
       <div className="hero-section">
         <div className="hero-border"></div>
