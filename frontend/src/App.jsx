@@ -23,7 +23,7 @@ export default function App() {
           I don't usually spend all day lingering around campus, but if I look familiar, 
           you've probably spotted me helping out at an <span className="frank-highlight">OW Cares</span> activation—or you just recognize 
           me by my constantly changing hair color. It's green right now, in case the 
-          nickname didn't give it away.
+          nickname didn't give it away lol. I've put my manifesto below if you're curious about my intentions :)
         </p>
       </div>
 
