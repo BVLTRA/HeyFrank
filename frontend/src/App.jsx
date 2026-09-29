@@ -4,6 +4,7 @@ import TrackItem from './components/TrackItem';
 import heroImage from './assets/hero3.png'; 
 import CountdownButton from './components/CountdownButton';
 import PivotModal from './components/PivotModal';
+import PurpleButton from './components/PurpleButton';
 import bvltraLogo from './assets/bvltra-logo.svg';
 
 export default function App() {
@@ -87,6 +88,10 @@ export default function App() {
           <span className="student-id">SN: 251056</span>
         </div>
       </footer>
+      <PurpleButton 
+        targetDate="2026-09-21T00:00:00" 
+        voteUrl="https://purple.bvltra.com" 
+      />
       {/* BVLTRA SUB-FOOTER */}
       <aside className="bvltra-footer">
         <div className="bvltra-brand">
