@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react';
 import TrackItem from './components/TrackItem';
 import heroImage from './assets/hero3.png'; 
 import CountdownButton from './components/CountdownButton';
